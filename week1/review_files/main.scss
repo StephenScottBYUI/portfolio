@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+
+$heading-font: 'Lora', serif;
+$paragraph-font: helvetica, arial, sans-serif;
+$font-color: #333;
+$line-color: #d0d0d0;
+$nav-visited: #666;
+$nav-active: #deb887;
+$nav-hover: #00ddff;
+
+@mixin center {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@mixin header {
+  & a {
+    text-decoration: none;
+    color: $font-color;
+  }
+
+  & a:visited {
+    color: $nav-visited
+  }
+}
+
+@mixin on-event {
+
+  &:visited {
+    color: $nav-visited
+  }
+
+  &:hover {
+    color: $nav-hover
+  }
+
+  &:active {
+    color: $nav-active;
+  }
+}
+
+body {
+  color: $font-color;
+  font-family: $paragraph-font;
+  max-width: 350px;
+  @include center;
+}
+
+h1,
+h2,
+nav {
+  font-family: $heading-font;
+}
+
+nav a,
+main a {
+  text-decoration: none;
+  color: $font-color;
+  @include on-event;
+}
+
+
+
+h1 {
+  font-size: 48pt;
+  text-align: center;
+  @include header;
+}
+
+
+
+
+nav {
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  text-align: center;
+  border-top: 1px solid $line-color;
+  border-bottom: 1px solid $line-color;
+
+  li {
+    list-style-type: none;
+    padding: .5em;
+    font-size: large;
+
+  }
+}
+
+img {
+  @include center;
+}
+
+.post-date {
+  margin-top: 2em;
+  text-transform: uppercase;
+  text-align: end;
+  border-bottom: 1px solid $line-color;
+  padding-bottom: .5em;
+}
+
+@media (min-width:500px) {
+
+  body {
+    max-width: 750px;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+
+  main {
+    margin-top: 1em;
+
+    article {
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+
+      .post-date {
+
+        padding-right: .5em;
+        padding-top: 1em;
+        border-right: 1px solid $line-color;
+        margin: 0;
+        border-bottom: none;
+      }
+
+      section {
+        padding: .5em 1em;
+        border-bottom: 1px solid $line-color;
+      }
+
+    }
+  }
+
+}

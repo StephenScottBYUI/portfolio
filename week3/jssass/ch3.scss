@@ -1,0 +1,68 @@
+//Variable assignment
+$my-variable: 42px;
+$font-name: 'Helvetica';
+$font-type: sans-serif;
+$base-path: '/images/';
+$file-name: 'kittens';
+$extension: 'png';
+$file-path: $base-path + $file-name + '.' + $extension;
+
+$base-url: 'https://stephenscottbyui.github.io/wdd230/';
+
+@function asset($base, $type, $path) {
+    @return url($base + $type + $path);
+}
+
+@function image($path, $base: $base-url) {
+    @return asset($base, 'images/', $path)
+}
+
+// Variable usage
+
+
+@import url($file-path);
+
+@mixin center {
+    width: 100%;
+    max-width: 1180px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@mixin colorful {
+    background-color: blue;
+}
+
+@mixin size($width, $height: $width) {
+    width: $width;
+    height: $height;
+}
+
+@mixin on-event {
+
+    &:hover,
+    &:active,
+    &:focus {
+        @content;
+    }
+}
+
+
+
+.container {
+    @include center;
+
+    @include on-event {
+        color: purple;
+    }
+}
+
+.foo {
+    @include size(100%);
+    background-image: image('bluffton.jpg');
+
+    @include on-event {
+        color: green;
+    }
+
+}

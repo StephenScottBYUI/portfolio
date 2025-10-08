@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+body {
+  color: #333;
+  font-family: helvetica, arial, sans-serif;
+  max-width: 350px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1,
+h2,
+nav {
+  font-family: "Lora", serif;
+}
+
+nav a,
+main a {
+  text-decoration: none;
+  color: #333;
+}
+nav a:visited,
+main a:visited {
+  color: #666;
+}
+nav a:hover,
+main a:hover {
+  color: #00ddff;
+}
+nav a:active,
+main a:active {
+  color: #deb887;
+}
+
+h1 {
+  font-size: 48pt;
+  text-align: center;
+}
+h1 a {
+  text-decoration: none;
+  color: #333;
+}
+h1 a:visited {
+  color: #666;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  text-align: center;
+  border-top: 1px solid #d0d0d0;
+  border-bottom: 1px solid #d0d0d0;
+}
+nav li {
+  list-style-type: none;
+  padding: 0.5em;
+  font-size: large;
+}
+
+img {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.post-date {
+  margin-top: 2em;
+  text-transform: uppercase;
+  text-align: end;
+  border-bottom: 1px solid #d0d0d0;
+  padding-bottom: 0.5em;
+}
+
+@media (min-width: 500px) {
+  body {
+    max-width: 750px;
+  }
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  main {
+    margin-top: 1em;
+  }
+  main article {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+  }
+  main article .post-date {
+    padding-right: 0.5em;
+    padding-top: 1em;
+    border-right: 1px solid #d0d0d0;
+    margin: 0;
+    border-bottom: none;
+  }
+  main article section {
+    padding: 0.5em 1em;
+    border-bottom: 1px solid #d0d0d0;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
