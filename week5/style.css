@@ -1,0 +1,55 @@
+.date-color {
+  color: grey;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: grey;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.summary {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+}
+.summary-container {
+  max-width: 400px;
+  padding: 1rem;
+  background-color: white;
+}
+.summary-tags-container {
+  display: flex;
+  margin-bottom: 1rem;
+}
+.summary-tag-list--item {
+  list-style: none;
+  font-weight: bold;
+}
+.summary-heading-container {
+  margin-bottom: 1rem;
+}
+.summary-content-container {
+  margin-bottom: 1rem;
+}
+.summary-content--text {
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 500px) {
+  .summary {
+    font-size: 1.5rem;
+  }
+  .summary-container {
+    max-width: 500px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

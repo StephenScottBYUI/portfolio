@@ -1,0 +1,70 @@
+$date-color: grey;
+$card-color: white;
+
+.date-color {
+  color: $date-color;
+}
+
+@mixin no-text-deco {
+  text-decoration: none;
+}
+
+@mixin bottom-margin {
+  margin-bottom: 1rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $date-color;
+}
+
+.link {
+  @include no-text-deco();
+}
+
+.summary {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+
+  &-container {
+    max-width: 400px;
+
+    padding: 1rem;
+    background-color: $card-color;
+  }
+
+  &-tags-container {
+    display: flex;
+    margin-bottom: 1rem;
+  }
+  &-tag-list--item {
+    list-style: none;
+    font-weight: bold;
+  }
+
+  &-heading-container {
+    @include bottom-margin();
+  }
+
+  &-content-container {
+    @include bottom-margin();
+  }
+
+  &-content--text {
+    @include bottom-margin();
+  }
+}
+@media (min-width: 500px) {
+  .summary {
+    font-size: 1.5rem;
+
+    &-container {
+      max-width: 500px;
+    }
+  }
+}
