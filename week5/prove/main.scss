@@ -1,0 +1,109 @@
+$background: #f8f9fa;
+$main-heading: #6c757d;
+$promo-color: green;
+$main-font: arial;
+
+@mixin grid {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+}
+
+@mixin lefty {
+  justify-self: right;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $main-font;
+}
+.cart {
+  background-color: $background;
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  padding: 1rem;
+
+  .container {
+    border: 2px solid $main-heading;
+    background-color: white;
+    padding: 1rem;
+    @include grid;
+  }
+  &-heading-container {
+    @include grid;
+    margin-bottom: 1rem;
+    border: none;
+  }
+
+  &-heading {
+    color: $main-heading;
+    grid-column: 1/2;
+  }
+
+  &-item1-container {
+    border-radius: 5px 5px 0 0;
+  }
+
+  &-total-items {
+    grid-column: 2/3;
+    text-align: center;
+    background-color: $main-heading;
+    color: $background;
+    padding: 0 0.5rem;
+    max-width: 50px;
+    border-radius: 9999px;
+    @include lefty;
+    min-width: 50px;
+  }
+
+  &-promo-container {
+    background-color: $background;
+    color: $promo-color;
+  }
+
+  &-item5-container {
+    border-radius: 0 0 5px 5px;
+  }
+
+  &-promo-input-container {
+    margin-top: 1rem;
+    padding: 0.5rem;
+    background-color: white;
+    border: 1px solid $main-heading;
+    @include grid;
+    column-gap: 0px;
+    border-radius: 5px;
+  }
+
+  &-promo-input {
+    height: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    height: 25px;
+    font-size: larger;
+    border-radius: 5px 0 0 5px;
+  }
+
+  &-promo-button {
+    background-color: $main-heading;
+    color: $background;
+    padding: 0.5rem 0.75rem;
+    font-size: larger;
+    grid-column: 2/3;
+    height: 35px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 0 5px 5px 0;
+  }
+
+  .left-side {
+    @include lefty;
+  }
+}
+
+.lighter {
+  color: $main-heading;
+}
