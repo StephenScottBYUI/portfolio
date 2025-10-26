@@ -1,0 +1,79 @@
+.curtain {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+
+  &-wrapper {
+    width: 100%;
+    height: 100%;
+  }
+
+  &-panel {
+    display: flex;
+    align-items: center;
+    background: orange;
+    color: #fff;
+    float: left;
+    position: relative;
+    width: 50%;
+    height: 100vh;
+    transition: all 1s ease-out;
+    z-index: 2;
+  }
+
+  &-panel-left {
+    justify-content: flex-end;
+    transform: translateX(-100%);
+    h1 {
+      padding-right: 0.5rem;
+    }
+  }
+
+  &-panel-right {
+    justify-content: flex-start;
+    transform: translateX(100%);
+    h1 {
+      padding-left: 0.5rem;
+    }
+  }
+
+  &-prize {
+    align-items: center;
+    background: #333;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    padding: 1rem 0;
+    position: absolute;
+    text-align: center;
+    z-index: 1;
+    width: 100%;
+
+    img {
+      width: 20%;
+    }
+  }
+}
+
+input[type="checkbox"] {
+  position: absolute;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  opacity: 0;
+  top: 0;
+  left: 0;
+
+  &:checked {
+    & ~ div.curtain-panel-left {
+      transform: translateX(0);
+    }
+
+    & ~ div.curtain-panel-right {
+      transform: translateX(0);
+    }
+  }
+}
