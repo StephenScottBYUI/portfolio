@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Recursive:slnt,wght,CASL,CRSV,MONO@-15..0,300..1000,0..1,0..1,0..1&display=swap");
+
+html {
+  font-size: 20 px;
+}
+
+:root {
+  --mono: "MONO" 0; //use values 0-1
+  --casl: "CASL" 0; //use values 0-1
+  --wght: 300; //use values 300-1000
+  --slnt: 0deg; //use values -15 - 0
+  --crsv: "CRSV" 0; // use 0, .5, or 1
+  --ratio: 1.5;
+  --s-5: calc(var(--s-4) / var(--ratio));
+  --s-4: calc(var(--s-3) / var(--ratio));
+  --s-3: calc(var(--s-2) / var(--ratio));
+  --s-2: calc(var(--s-1) / var(--ratio));
+  --s-1: calc(var(--s0) / var(--ratio));
+  --s0: 1rem;
+  --s1: calc(var(--s0) * var(--ratio));
+  --s2: calc(var(--s1) * var(--ratio));
+  --s3: calc(var(--s2) * var(--ratio));
+  --s4: calc(var(--s3) * var(--ratio));
+  --s5: calc(var(--s4) * var(--ratio));
+}
+* {
+  font-weight: var(--wght);
+  font-style: oblique var(--slnt);
+  font-variation-settings: var(--mono), var(--casl), var(--crsv);
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Recursive, sans-serif;
+  line-height: var(s1);
+}
+
+.heading {
+  --wght: 800;
+  --casl: "CASL" 0;
+  margin-top: var(--s2);
+  margin-bottom: 0;
+}
+
+h1 {
+  font-size: var(--s3);
+}
+h2 {
+  font-size: var(--s2);
+}
+h3 {
+  font-size: var(--s1);
+}
+p,
+ul {
+  line-height: var(--s1);
+  margin-top: var(--s1);
+}
+
+.page {
+  margin: 0 auto;
+  max-width: 800px;
+  padding-left: 2rem;
+}
+
+.highlight {
+  display: grid;
+  grid-template-columns: 10em auto;
+  padding-right: 5em;
+  &-text {
+    grid-column: 2/3;
+    padding-left: 1em;
+    border-left: 1px solid black;
+  }
+}
+
+.alert {
+  grid-column: 1/2;
+  position: relative;
+  width: 140px;
+  height: 140px;
+
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-self: center;
+  align-self: center;
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 10px;
+    border-radius: 50%;
+    border: 3px solid red;
+    box-shadow: 0 0 0 6px yellow;
+  }
+  &-exam {
+    position: absolute;
+    transform-origin: center;
+    margin: 0;
+  }
+  &-exam:nth-of-type(1) {
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  &-exam:nth-of-type(2) {
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%) rotate(90deg);
+  }
+  &-exam:nth-of-type(3) {
+    bottom: 8px;
+    left: 50%;
+    transform: translateX(-50%) rotate(180deg);
+  }
+  &-exam:nth-of-type(4) {
+    left: 8px;
+    top: 50%;
+    transform: translateY(-50%) rotate(-90deg);
+  }
+  &-alert {
+    position: relative;
+    font-size: var(--s1);
+    --wght: 800;
+    z-index: 1;
+    margin: 0;
+  }
+}
