@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  font-family: "Noto Sans", arial, sans serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: whitesmoke;
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 500px;
+}
+
+.business {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  padding: 1rem;
+  gap: 0;
+}
+.business-image {
+  grid-column: 1/2;
+  grid-row: 1/4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.business-image-logo {
+  transform: rotate(-90deg);
+  width: 100%;
+  height: auto;
+  min-width: 250px;
+  max-width: 400px;
+  display: block;
+}
+.business-header {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  display: flex;
+  align-items: end;
+}
+.business-header-heading {
+  align-self: end;
+}
+.business-body {
+  grid-column: 2/3;
+  grid-row: 2/4;
+}
+.business-footer {
+  grid-row: 4/5;
+  grid-column: 2/3;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  align-self: start;
+}
+
+/*# sourceMappingURL=main.css.map */

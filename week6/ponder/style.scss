@@ -19,21 +19,21 @@
     height: 100vh;
     transition: all 1s ease-out;
     z-index: 2;
-  }
 
-  &-panel-left {
-    justify-content: flex-end;
-    transform: translateX(-100%);
-    h1 {
-      padding-right: 0.5rem;
+    &-left {
+      justify-content: flex-end;
+      transform: translateX(-100%);
+      h1 {
+        padding-right: 0.5rem;
+      }
     }
-  }
 
-  &-panel-right {
-    justify-content: flex-start;
-    transform: translateX(100%);
-    h1 {
-      padding-left: 0.5rem;
+    &-right {
+      justify-content: flex-start;
+      transform: translateX(100%);
+      h1 {
+        padding-left: 0.5rem;
+      }
     }
   }
 

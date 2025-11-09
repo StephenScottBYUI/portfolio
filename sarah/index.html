@@ -3,20 +3,72 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Business Card for Sarah Scott" />
+    <meta name="author" content="Stephen Scott" />
     <title>Sarah Scott UDC</title>
     <link rel="stylesheet" href="main.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+    <!-- Open Graph (for social media previews) -->
+    <meta property="og:title" content="Sarah's Business Card" />
+    <meta property="og:description" content="Business Card for Sarah Scott" />
+    <meta
+      property="og:image"
+      content="https://stephenscottbyui.github.io/portfolio/sarah/images/udc-logo.png"
+    />
+    <meta
+      property="og:url"
+      content="https://stephenscottbyui.github.io/portfolio/sarah/index.html"
+    />
+    <meta property="og:type" content="website" />
   </head>
 
   <body>
-    <article class="business">
-      <section class="business-header-container">
-        <img
-          class="business-header-image"
-          src="images/udc-logo.png"
-          alt="Universal Display Logo"
-        />
-        <h1 class="business-header-heading">Sarah Scott</h1>
-      </section>
-    </article>
+    <div class="fancy-background">
+      <article class="business">
+        <div class="business-image">
+          <img
+            class="business-image-logo"
+            src="images/udc-logo.png"
+            alt="Universal Display Logo"
+          />
+        </div>
+        <section class="business-header background-gradient">
+          <h1 class="business-header-heading">Sarah Scott</h1>
+        </section>
+
+        <section class="business-body background-gradient">
+          <h2 class="business-body-title">H.R. Administrator</h2>
+          <h2 class="business-body-phone">
+            <a href="tel: +16093316059" class="business-body-phone-number link"
+              >📱 609-331-6059</a
+            >
+          </h2>
+          <h2 class="business-body-email">
+            <a
+              href="mailto:sscott@oled.com"
+              class="business-body-email-address link"
+              >📨 sscott@OLED.com</a
+            >
+          </h2>
+        </section>
+        <section class="business-footer background-gradient">
+          <h3 class="business-footer-website">
+            <a href="https://oled.com/" class="business-footer-website-address"
+              >OLED.com</a
+            >
+          </h3>
+          <p class="business-footer-contact">
+            Click address book to add to your phones contacts
+          </p>
+          <a href="#" class="business-footer-add"
+            ><img
+              src="images/address-book.png"
+              alt="icon of an address book"
+              class="business-footer-add-button"
+          /></a>
+        </section>
+      </article>
+    </div>
   </body>
 </html>
