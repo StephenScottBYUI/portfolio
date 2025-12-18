@@ -70,6 +70,7 @@ body {
   max-width: 475px;
   background-color: $background-color;
   border-radius: 20px;
+  overflow: auto;
 
   &-image {
     grid-column: 1/3;

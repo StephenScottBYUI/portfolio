@@ -49,6 +49,7 @@ body {
   max-width: 475px;
   background-color: #212626;
   border-radius: 20px;
+  overflow: auto;
 }
 .business-image {
   grid-column: 1/3;
