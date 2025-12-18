@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 252 144">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: 0em;
+      }
+
+      .cls-2 {
+        fill: #1e7abe;
+      }
+
+      .cls-3 {
+        fill: #231f20;
+        font-family: Candara, Candara;
+        font-size: 25.95px;
+      }
+
+      .cls-4 {
+        fill: #ee3543;
+      }
+
+      .cls-5 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-6 {
+        fill: #57bc73;
+      }
+    </style>
+  </defs>
+  <g id="text">
+    <text class="cls-3" transform="translate(12.3 94.49)"><tspan x="0" y="0">UNIVERSAL DISPL</tspan><tspan class="cls-5" x="197.75" y="0">A</tspan><tspan class="cls-1" x="213.12" y="0">Y</tspan><tspan x="30.05" y="23.58">CORPOR</tspan><tspan class="cls-5" x="126.09" y="23.58">A</tspan><tspan x="141.47" y="23.58">TION</tspan></text>
+  </g>
+  <g id="blue-tri">
+    <polyline class="cls-2" points="239.58 71.74 135.25 53.31 239.58 37.21 239.58 69.42"/>
+  </g>
+  <g id="red-tri">
+    <polyline class="cls-4" points="14.25 37.21 118.58 53.31 14.25 71.74 14.25 37.21"/>
+  </g>
+  <g id="green-tri">
+    <polygon class="cls-6" points="32.47 18.56 126.91 53.31 220.88 18.56 32.47 18.56"/>
+  </g>
+</svg>
