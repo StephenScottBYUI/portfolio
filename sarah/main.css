@@ -48,7 +48,7 @@ body {
   gap: 1rem;
   max-width: 475px;
   background-color: #212626;
-  border-radius: 25px;
+  border-radius: 20px;
 }
 .business-image {
   grid-column: 1/3;
