@@ -1,0 +1,10 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Scott;Sarah;;;
+FN:Sarah Scott
+ORG:Universal Display Company
+TITLE:HR Administrator
+TEL;TYPE=WORK,CELL,VOICE:+16095551234
+EMAIL;TYPE=WORK:sscott@oled.com
+URL:https://oled.com/
+END:VCARD

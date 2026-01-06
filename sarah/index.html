@@ -26,6 +26,7 @@
   <body>
     <div class="fancy-background">
       <article class="business">
+        <h1 class="business-name">Universal Display Corporation</h1>
         <div class="business-image">
           <?xml version="1.0" encoding="UTF-8"?>
           <svg
@@ -33,12 +34,6 @@
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 252 144"
           >
-            <g id="text">
-              <text class="cls-3" x="126" y="94.49" text-anchor="middle">
-                <tspan x="126" y="94.49">UNIVERSAL DISPLAY</tspan>
-                <tspan x="126" y="118.07">CORPORATION</tspan>
-              </text>
-            </g>
             <g id="blue-tri">
               <polyline
                 class="cls-2"
@@ -58,27 +53,34 @@
               />
             </g>
           </svg>
+          <img
+            class="business-image-sarah"
+            src="images/sarah_profile.jpg"
+            alt="Picture of Sarah"
+          />
         </div>
         <section class="business-header background-gradient">
-          <h1 class="business-header-heading">Sarah Scott</h1>
+          <h2 class="business-header-heading">Sarah Scott</h2>
         </section>
 
         <section class="business-body background-gradient">
-          <h2 class="business-body-title">H.R. Administrator</h2>
-          <h2 class="business-body-phoneicon">📱</h2>
-          <h2 class="business-body-phone">
+          <h3 class="business-body-title">H.R. Administrator</h3>
+
+          <h4 class="business-body-phone">
+            <span class="business-body-phoneicon">Phone: </span>
             <a href="tel: +16093316059" class="business-body-phone-number link"
               >609-331-6059</a
             >
-          </h2>
-          <h2 class="business-body-emailicon">📨</h2>
-          <h2 class="business-body-email">
+          </h4>
+
+          <h4 class="business-body-email">
+            <span class="business-body-emailicon">E-mail: </span>
             <a
               href="mailto:sscott@oled.com"
               class="business-body-email-address link"
-              >sscott@OLED.com</a
+              >sscott@oled.com</a
             >
-          </h2>
+          </h4>
         </section>
         <section class="business-footer background-gradient">
           <h3 class="business-footer-website">
@@ -86,15 +88,10 @@
               >oled.com</a
             >
           </h3>
-          <p class="business-footer-contact">
-            Click address book to add to your phones contacts
-          </p>
-          <a href="#" class="business-footer-add"
-            ><img
-              src="images/address-book.png"
-              alt="icon of an address book"
-              class="business-footer-add-button"
-          /></a>
+
+          <a href="vcard/sarah.vcf" class="business-footer-add" download
+            >Add to Contacts</a
+          >
         </section>
       </article>
     </div>
